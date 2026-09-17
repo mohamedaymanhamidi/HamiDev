@@ -1,86 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Hamidev creates modern, responsive and professional websites for small businesses, entrepreneurs and local brands."
-    >
+    <meta name="description"
+          content="HamiDev — Modern websites, web applications and software solutions built with modern technologies.">
+    <meta name="theme-color" content="#061326">
 
-    <meta
-        name="keywords"
-        content="Hamidev, web development, website design, Morocco, business website, landing page, freelance developer"
-    >
+    <title>HamiDev — Digital Solutions</title>
 
-    <meta name="author" content="Hamidev">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="Hamidev — Websites That Work For Your Business">
-    <meta
-        property="og:description"
-        content="Modern websites for businesses, entrepreneurs and local brands."
-    >
-    <meta property="og:type" content="website">
-
-    <title>Hamidev — Websites That Work For Your Business</title>
-
-    <link rel="icon" href="assets/favicon.png">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- =========================================================
+     BACKGROUND EFFECTS
+========================================================= -->
+
+<div class="background">
+    <div class="grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+</div>
+
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
 
 <header class="navbar" id="navbar">
 
     <div class="container nav-container">
 
         <a href="#home" class="logo">
-            <span class="logo-mark">H</span>
-            <span class="logo-text">Hami<span>dev</span></span>
+            <span class="logo-bracket">&lt;</span>
+            <span>Hami</span><strong>Dev</strong>
+            <span class="logo-bracket">/&gt;</span>
         </a>
 
         <nav class="nav-links" id="navLinks">
-
             <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
-            <a href="#about">About</a>
             <a href="#contact">Contact</a>
-
         </nav>
 
         <a href="#contact" class="nav-cta">
             Let's Talk
-            <span>↗</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
 
-        <button
-            class="mobile-menu"
-            id="mobileMenu"
-            aria-label="Open navigation"
-        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
             <span></span>
             <span></span>
             <span></span>
@@ -91,65 +75,63 @@
 </header>
 
 
+<!-- =========================================================
+     HERO
+========================================================= -->
+
 <main>
 
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-    <div class="hero-grid"></div>
+<section class="hero section" id="home">
 
     <div class="container hero-container">
 
-        <div class="hero-content">
+        <div class="hero-content reveal">
 
-            <div class="eyebrow">
+            <div class="status">
                 <span class="status-dot"></span>
                 Available for new projects
             </div>
 
+            <p class="eyebrow">
+                DIGITAL SOLUTIONS
+            </p>
+
             <h1>
-                Your business deserves
-                <span>a website that works.</span>
+                We build
+                <span class="gradient-text">digital experiences</span>
+                that move businesses forward.
             </h1>
 
             <p class="hero-description">
-                Hamidev creates modern, fast and professional websites
-                for small businesses, entrepreneurs and growing brands.
+                HamiDev creates modern websites, web applications and
+                custom software solutions designed around your business,
+                your customers and your goals.
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#contact" class="btn btn-primary">
-                    Start a Project
-                    <span>↗</span>
+                <a href="#projects" class="btn btn-primary">
+                    Explore Projects
+                    <i class="fa-solid fa-arrow-down"></i>
                 </a>
 
-                <a href="#projects" class="btn btn-secondary">
-                    See Our Work
+                <a href="#contact" class="btn btn-secondary">
+                    Start a Project
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
             </div>
 
-            <div class="hero-trust">
+            <div class="hero-tech">
 
-                <div class="trust-item">
-                    <strong>05+</strong>
-                    <span>Featured Projects</span>
-                </div>
+                <span>Built with</span>
 
-                <div class="trust-divider"></div>
-
-                <div class="trust-item">
-                    <strong>100%</strong>
-                    <span>Responsive Design</span>
-                </div>
-
-                <div class="trust-divider"></div>
-
-                <div class="trust-item">
-                    <strong>Direct</strong>
-                    <span>Communication</span>
+                <div class="tech-list">
+                    <span>Angular</span>
+                    <span>React</span>
+                    <span>Spring Boot</span>
+                    <span>Java</span>
+                    <span>PHP</span>
                 </div>
 
             </div>
@@ -157,112 +139,180 @@
         </div>
 
 
-        <div class="hero-visual">
+        <!-- Futuristic visual -->
+
+        <div class="hero-visual reveal">
 
             <div class="code-window">
 
                 <div class="window-header">
-
                     <div class="window-dots">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
 
-                    <div class="window-title">
-                        hamidev
-                    </div>
-
-                    <div></div>
-
+                    <span class="window-title">
+                        hamidev.config
+                    </span>
                 </div>
 
                 <div class="code-content">
 
                     <div class="code-line">
-                        <span class="code-number">01</span>
-                        <span class="code-purple">const</span>
-                        <span class="code-white">business</span>
-                        <span class="code-gray"> = </span>
-                        <span class="code-yellow">{</span>
+                        <span class="number">01</span>
+                        <span class="purple">const</span>
+                        <span class="white">project</span>
+                        <span class="blue">=</span>
+                        <span class="cyan">{</span>
                     </div>
 
                     <div class="code-line indent">
-                        <span class="code-number">02</span>
-                        <span class="code-blue">website</span>
-                        <span class="code-gray">:</span>
-                        <span class="code-green"> "modern"</span>
-                        <span class="code-gray">,</span>
+                        <span class="number">02</span>
+                        <span class="white">design:</span>
+                        <span class="green">'modern'</span><span>,</span>
                     </div>
 
                     <div class="code-line indent">
-                        <span class="code-number">03</span>
-                        <span class="code-blue">design</span>
-                        <span class="code-gray">:</span>
-                        <span class="code-green"> "premium"</span>
-                        <span class="code-gray">,</span>
+                        <span class="number">03</span>
+                        <span class="white">performance:</span>
+                        <span class="green">'optimized'</span><span>,</span>
                     </div>
 
                     <div class="code-line indent">
-                        <span class="code-number">04</span>
-                        <span class="code-blue">responsive</span>
-                        <span class="code-gray">:</span>
-                        <span class="code-yellow"> true</span>
-                        <span class="code-gray">,</span>
+                        <span class="number">04</span>
+                        <span class="white">technology:</span>
+                        <span class="green">'modern'</span><span>,</span>
                     </div>
 
                     <div class="code-line indent">
-                        <span class="code-number">05</span>
-                        <span class="code-blue">fast</span>
-                        <span class="code-gray">:</span>
-                        <span class="code-yellow"> true</span>
-                        <span class="code-gray">,</span>
+                        <span class="number">05</span>
+                        <span class="white">scalable:</span>
+                        <span class="orange">true</span>
                     </div>
 
                     <div class="code-line">
-                        <span class="code-number">06</span>
-                        <span class="code-yellow">}</span>
+                        <span class="number">06</span>
+                        <span class="cyan">}</span>
+                    </div>
+
+                    <div class="code-line space">
+                        <span class="number">07</span>
                     </div>
 
                     <div class="code-line">
-                        <span class="code-number">07</span>
+                        <span class="number">08</span>
+                        <span class="purple">return</span>
+                        <span class="cyan">HamiDev</span><span class="white">();</span>
                     </div>
 
-                    <div class="code-line">
-                        <span class="code-number">08</span>
-                        <span class="code-purple">return</span>
-                        <span class="code-green"> "Let's build it."</span>
+                    <div class="cursor-line">
+                        <span></span>
                     </div>
-
-                </div>
-
-                <div class="code-footer">
-
-                    <span>
-                        <span class="footer-dot"></span>
-                        Ready to build
-                    </span>
-
-                    <span>HAMIDEV</span>
 
                 </div>
 
             </div>
 
             <div class="floating-card card-one">
-                <span class="floating-icon">✦</span>
+                <i class="fa-solid fa-bolt"></i>
                 <div>
-                    <strong>Modern UI</strong>
-                    <small>Built for your brand</small>
+                    <strong>Fast</strong>
+                    <small>Performance</small>
                 </div>
             </div>
 
             <div class="floating-card card-two">
-                <span class="floating-icon">✓</span>
+                <i class="fa-solid fa-code"></i>
                 <div>
-                    <strong>Mobile Ready</strong>
-                    <small>Every screen, every device</small>
+                    <strong>Clean</strong>
+                    <small>Architecture</small>
                 </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span></span>
+        Scroll to explore
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="section about" id="about">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-number">01</span>
+
+            <div>
+                <p class="eyebrow">ABOUT HAMIDEV</p>
+                <h2>Technology with a <span>purpose.</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text reveal">
+
+                <p class="large-text">
+                    We don't just build websites.
+                    <strong>We build digital tools that help businesses grow.</strong>
+                </p>
+
+                <p>
+                    HamiDev is a software development brand focused on
+                    creating modern, responsive and reliable digital
+                    experiences for businesses, entrepreneurs and organizations.
+                </p>
+
+                <p>
+                    From a professional business website to a complete
+                    web application, every project is developed with
+                    performance, maintainability and user experience in mind.
+                </p>
+
+                <a href="#contact" class="text-link">
+                    Let's build something
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="stats-grid reveal">
+
+                <div class="stat">
+                    <strong class="counter" data-target="10">0</strong>
+                    <span>Projects &amp; applications</span>
+                </div>
+
+                <div class="stat">
+                    <strong class="counter" data-target="5">0</strong>
+                    <span>Core technologies</span>
+                </div>
+
+                <div class="stat">
+                    <strong class="counter" data-target="100">0</strong>
+                    <span>% Custom solutions</span>
+                </div>
+
+                <div class="stat">
+                    <strong class="counter" data-target="24">0</strong>
+                    <span>Support mindset</span>
+                </div>
+
             </div>
 
         </div>
@@ -272,114 +322,121 @@
 </section>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- =========================================================
+     SERVICES
+========================================================= -->
 
-<section class="section services-section" id="services">
+<section class="section services" id="services">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading reveal">
+
+            <span class="section-number">02</span>
 
             <div>
-                <span class="section-label">01 — SERVICES</span>
-
-                <h2>
-                    Everything your business
-                    <span>needs online.</span>
-                </h2>
+                <p class="eyebrow">WHAT WE DO</p>
+                <h2>Solutions built for <span>your goals.</span></h2>
             </div>
-
-            <p>
-                From a simple business website to a complete online
-                experience, Hamidev builds solutions designed around
-                your business and your customers.
-            </p>
 
         </div>
 
 
         <div class="services-grid">
 
-            <article class="service-card featured-service">
+            <article class="service-card reveal">
 
                 <div class="service-number">01</div>
 
-                <div class="service-icon">◈</div>
+                <div class="service-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
 
                 <h3>Business Websites</h3>
 
                 <p>
-                    Professional websites that introduce your business,
-                    build trust and turn visitors into customers.
+                    Professional, responsive websites designed to
+                    establish your online presence and turn visitors
+                    into customers.
                 </p>
 
                 <div class="service-tags">
-                    <span>Business</span>
-                    <span>Corporate</span>
-                    <span>Local</span>
+                    <span>Responsive</span>
+                    <span>SEO Ready</span>
+                    <span>Fast</span>
                 </div>
 
             </article>
 
 
-            <article class="service-card">
+            <article class="service-card reveal">
 
                 <div class="service-number">02</div>
 
-                <div class="service-icon">⌁</div>
+                <div class="service-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
 
-                <h3>Landing Pages</h3>
+                <h3>Web Applications</h3>
 
                 <p>
-                    Focused landing pages for campaigns, services,
-                    products and promotions.
+                    Interactive and scalable web applications built
+                    around your workflows, users and business logic.
                 </p>
 
                 <div class="service-tags">
-                    <span>Campaigns</span>
-                    <span>Leads</span>
+                    <span>Angular</span>
+                    <span>React</span>
+                    <span>Spring</span>
                 </div>
 
             </article>
 
 
-            <article class="service-card">
+            <article class="service-card reveal">
 
                 <div class="service-number">03</div>
 
-                <div class="service-icon">◫</div>
+                <div class="service-icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
 
-                <h3>Booking & Contact</h3>
+                <h3>Backend &amp; APIs</h3>
 
                 <p>
-                    Make it easier for customers to contact you,
-                    request quotes or book your services online.
+                    Secure and structured backend systems and REST APIs
+                    designed to connect your applications and data.
                 </p>
 
                 <div class="service-tags">
-                    <span>Booking</span>
-                    <span>Forms</span>
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>MySQL</span>
                 </div>
 
             </article>
 
 
-            <article class="service-card">
+            <article class="service-card reveal">
 
                 <div class="service-number">04</div>
 
-                <div class="service-icon">↻</div>
+                <div class="service-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
 
-                <h3>Website Maintenance</h3>
+                <h3>UI &amp; Digital Experience</h3>
 
                 <p>
-                    Updates, improvements, fixes and ongoing support
-                    to keep your website running smoothly.
+                    Modern interfaces with thoughtful interactions,
+                    animations and responsive layouts that feel great
+                    on every device.
                 </p>
 
                 <div class="service-tags">
-                    <span>Support</span>
-                    <span>Updates</span>
+                    <span>UI/UX</span>
+                    <span>Animation</span>
+                    <span>Mobile</span>
                 </div>
 
             </article>
@@ -391,123 +448,22 @@
 </section>
 
 
-<!-- ================= PROCESS ================= -->
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
 
-<section class="section process-section">
-
-    <div class="container">
-
-        <div class="section-heading centered">
-
-            <span class="section-label">02 — PROCESS</span>
-
-            <h2>
-                From idea to
-                <span>online.</span>
-            </h2>
-
-            <p>
-                A simple process without unnecessary complexity.
-            </p>
-
-        </div>
-
-
-        <div class="process-grid">
-
-            <div class="process-item">
-
-                <span class="process-number">01</span>
-
-                <div>
-                    <h3>Tell us about your business</h3>
-                    <p>
-                        We learn about your business, goals,
-                        customers and what you need.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="process-item">
-
-                <span class="process-number">02</span>
-
-                <div>
-                    <h3>Plan & Design</h3>
-                    <p>
-                        We create the structure and visual direction
-                        around your brand.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="process-item">
-
-                <span class="process-number">03</span>
-
-                <div>
-                    <h3>Build</h3>
-                    <p>
-                        Your website is developed, tested and optimized
-                        for desktop and mobile.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="process-item">
-
-                <span class="process-number">04</span>
-
-                <div>
-                    <h3>Launch</h3>
-                    <p>
-                        Your website goes live and becomes ready
-                        for your customers.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="section projects-section" id="projects">
+<section class="section projects" id="projects">
 
     <div class="container">
 
-        <div class="section-heading">
+        <div class="section-heading reveal">
+
+            <span class="section-number">03</span>
 
             <div>
-
-                <span class="section-label">03 — SELECTED WORK</span>
-
-                <h2>
-                    Built for
-                    <span>real businesses.</span>
-                </h2>
-
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Projects we've <span>built.</span></h2>
             </div>
-
-            <a
-                href="https://mohamedaymanhamidi.github.io/"
-                target="_blank"
-                rel="noopener"
-                class="text-link"
-            >
-                View full portfolio ↗
-            </a>
 
         </div>
 
@@ -515,190 +471,200 @@
         <div class="projects-grid">
 
 
-            <!-- HB MOVING -->
+            <!-- Cool Ice Cream -->
 
-            <article class="project-card project-large">
+            <article class="project-card featured reveal">
 
-                <div class="project-image project-hb">
+                <div class="project-image project-blue">
 
-                    <div class="project-overlay">
+                    <div class="project-overlay"></div>
 
-                        <span class="project-category">
-                            Business Website
-                        </span>
-
-                        <h3>HB Moving</h3>
-
-                        <p>
-                            Moving & logistics business website
-                            with booking integration.
-                        </p>
-
-                        <a
-                            href="https://hb-moving.com"
-                            target="_blank"
-                            rel="noopener"
-                            class="project-link"
-                        >
-                            Visit Website ↗
-                        </a>
-
+                    <div class="project-mockup">
+                        <div class="mockup-header"></div>
+                        <div class="mockup-body">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
+
+                    <span class="project-index">01</span>
 
                 </div>
 
-                <div class="project-info">
+                <div class="project-content">
 
-                    <div>
-                        <h3>HB Moving</h3>
-                        <p>Moving & Logistics</p>
+                    <div class="project-top">
+                        <span>Production Website</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </div>
+
+                    <h3>Cool Ice Cream &amp; More</h3>
+
+                    <p>
+                        Modern ice cream business website with animated
+                        UI, responsive design, interactive menu and events.
+                    </p>
 
                     <div class="project-tech">
-                        PHP · JavaScript · CSS
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>CSS</span>
                     </div>
+
+                    <a href="https://cool-icecream.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        View live project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
                 </div>
 
             </article>
 
 
-            <!-- DREAM CREAM -->
+            <!-- Dream Cream Truck -->
 
-            <article class="project-card">
+            <article class="project-card reveal">
 
-                <div class="project-image project-dream">
+                <div class="project-image project-cyan">
 
-                    <div class="project-overlay">
+                    <div class="project-overlay"></div>
 
-                        <span class="project-category">
-                            Business Website
-                        </span>
-
-                        <h3>Dream Cream Truck</h3>
-
-                        <p>
-                            Modern website for a mobile ice cream business.
-                        </p>
-
-                        <a
-                            href="https://dreamcreamtruck.com"
-                            target="_blank"
-                            rel="noopener"
-                            class="project-link"
-                        >
-                            Visit Website ↗
-                        </a>
-
+                    <div class="abstract-ui">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+
+                    <span class="project-index">02</span>
 
                 </div>
 
-                <div class="project-info">
+                <div class="project-content">
 
-                    <div>
-                        <h3>Dream Cream Truck</h3>
-                        <p>Mobile Food Business</p>
+                    <div class="project-top">
+                        <span>Business Website</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </div>
+
+                    <h3>Dream Cream Truck</h3>
+
+                    <p>
+                        Premium ice cream truck website featuring
+                        a dynamic menu and responsive experience.
+                    </p>
 
                     <div class="project-tech">
-                        Angular · TypeScript
+                        <span>Angular</span>
+                        <span>TypeScript</span>
+                        <span>HTML/CSS</span>
                     </div>
+
+                    <a href="https://dreamcreamtruck.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        View live project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
                 </div>
 
             </article>
 
 
-            <!-- COOL ICE CREAM -->
+            <!-- HB Moving -->
 
-            <article class="project-card">
+            <article class="project-card reveal">
 
-                <div class="project-image project-cool">
+                <div class="project-image project-navy">
 
-                    <div class="project-overlay">
+                    <div class="project-overlay"></div>
 
-                        <span class="project-category">
-                            Production Website
-                        </span>
-
-                        <h3>Cool Ice Cream</h3>
-
-                        <p>
-                            Responsive ice cream website with
-                            interactive pages and modern UI.
-                        </p>
-
-                        <a
-                            href="https://cool-icecream.com"
-                            target="_blank"
-                            rel="noopener"
-                            class="project-link"
-                        >
-                            Visit Website ↗
-                        </a>
-
+                    <div class="abstract-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+
+                    <span class="project-index">03</span>
 
                 </div>
 
-                <div class="project-info">
+                <div class="project-content">
 
-                    <div>
-                        <h3>Cool Ice Cream</h3>
-                        <p>Food & Beverage</p>
+                    <div class="project-top">
+                        <span>Business Website</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </div>
+
+                    <h3>HB Moving</h3>
+
+                    <p>
+                        Moving services website with quote workflow
+                        and booking system integration.
+                    </p>
 
                     <div class="project-tech">
-                        React · Vite · CSS
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>WordPress</span>
                     </div>
+
+                    <a href="https://hb-moving.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        View live project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
                 </div>
 
             </article>
 
 
-            <!-- TAHA -->
+            <!-- Taha -->
 
-            <article class="project-card">
+            <article class="project-card reveal">
 
-                <div class="project-image project-taha">
+                <div class="project-image project-dark">
 
-                    <div class="project-overlay">
+                    <div class="project-overlay"></div>
 
-                        <span class="project-category">
-                            Fintech Interface
-                        </span>
-
-                        <h3>Taha Secure Payment</h3>
-
-                        <p>
-                            Clean payment interface with QR-based
-                            transaction flows.
-                        </p>
-
-                        <a
-                            href="https://github.com/mohamedaymanhamidi"
-                            target="_blank"
-                            rel="noopener"
-                            class="project-link"
-                        >
-                            View Project ↗
-                        </a>
-
+                    <div class="payment-ui">
+                        <div class="payment-circle">
+                            <i class="fa-solid fa-qrcode"></i>
+                        </div>
+                        <span></span>
+                        <span></span>
                     </div>
+
+                    <span class="project-index">04</span>
 
                 </div>
 
-                <div class="project-info">
+                <div class="project-content">
 
-                    <div>
-                        <h3>Taha Secure Payment</h3>
-                        <p>Payment System</p>
+                    <div class="project-top">
+                        <span>Fintech Application</span>
+                        <i class="fa-solid fa-code"></i>
                     </div>
 
+                    <h3>Taha Secure Payment</h3>
+
+                    <p>
+                        Fintech-style payment system integrating multiple
+                        payment methods with QR-based transactions.
+                    </p>
+
                     <div class="project-tech">
-                        React · TypeScript · Vite
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Framer Motion</span>
                     </div>
 
                 </div>
@@ -708,45 +674,42 @@
 
             <!-- OCP -->
 
-            <article class="project-card">
+            <article class="project-card reveal">
 
-                <div class="project-image project-ocp">
+                <div class="project-image project-electric">
 
-                    <div class="project-overlay">
+                    <div class="project-overlay"></div>
 
-                        <span class="project-category">
-                            Enterprise Application
-                        </span>
-
-                        <h3>OCP Platform</h3>
-
-                        <p>
-                            Enterprise application for managing
-                            users and structured inspection data.
-                        </p>
-
-                        <a
-                            href="https://github.com/mohamedaymanhamidi"
-                            target="_blank"
-                            rel="noopener"
-                            class="project-link"
-                        >
-                            View Project ↗
-                        </a>
-
+                    <div class="dashboard-ui">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+
+                    <span class="project-index">05</span>
 
                 </div>
 
-                <div class="project-info">
+                <div class="project-content">
 
-                    <div>
-                        <h3>OCP Platform</h3>
-                        <p>Enterprise Software</p>
+                    <div class="project-top">
+                        <span>Enterprise Platform</span>
+                        <i class="fa-solid fa-code"></i>
                     </div>
 
+                    <h3>OCP Platform</h3>
+
+                    <p>
+                        Enterprise application for managing users and
+                        structured inspection data.
+                    </p>
+
                     <div class="project-tech">
-                        Angular · Spring Boot · Java
+                        <span>Angular</span>
+                        <span>Spring Boot</span>
+                        <span>Java</span>
+                        <span>MySQL</span>
                     </div>
 
                 </div>
@@ -755,69 +718,153 @@
 
         </div>
 
+
+        <div class="projects-footer reveal">
+
+            <a href="https://mohamedaymanhamidi.github.io/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-secondary">
+                View Full Portfolio
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+        </div>
+
     </div>
 
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- =========================================================
+     TECHNOLOGIES
+========================================================= -->
 
-<section class="section about-section" id="about">
+<section class="section technologies">
 
-    <div class="container about-container">
+    <div class="container">
 
-        <div class="about-visual">
+        <div class="tech-intro reveal">
 
-            <div class="about-logo">
-                <span>H</span>
-            </div>
-
-            <div class="about-glow"></div>
-
-        </div>
-
-
-        <div class="about-content">
-
-            <span class="section-label">04 — ABOUT HAMIDEV</span>
+            <p class="eyebrow">TECHNOLOGY STACK</p>
 
             <h2>
-                Technology is useful.
-                <span>Good design makes it matter.</span>
+                Built with technologies
+                <span>we trust.</span>
             </h2>
 
-            <p>
-                Hamidev is a web development studio focused on helping
-                small businesses, entrepreneurs and local brands build
-                a professional presence online.
-            </p>
+        </div>
 
-            <p>
-                Behind Hamidev is Mohamed Ayman Hamidi, a software
-                engineer with hands-on experience building websites,
-                web applications and digital solutions for real businesses.
-            </p>
 
-            <div class="about-points">
+        <div class="tech-marquee">
+
+            <div class="tech-track">
+
+                <span><i class="fa-brands fa-java"></i> Java</span>
+                <span><i class="fa-brands fa-angular"></i> Angular</span>
+                <span><i class="fa-brands fa-react"></i> React</span>
+                <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span><i class="fa-brands fa-php"></i> PHP</span>
+                <span><i class="fa-solid fa-database"></i> MySQL</span>
+                <span><i class="fa-brands fa-git-alt"></i> Git</span>
+                <span><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+
+                <!-- duplicate for seamless loop -->
+
+                <span><i class="fa-brands fa-java"></i> Java</span>
+                <span><i class="fa-brands fa-angular"></i> Angular</span>
+                <span><i class="fa-brands fa-react"></i> React</span>
+                <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span><i class="fa-brands fa-php"></i> PHP</span>
+                <span><i class="fa-solid fa-database"></i> MySQL</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROCESS
+========================================================= -->
+
+<section class="section process">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-number">04</span>
+
+            <div>
+                <p class="eyebrow">OUR PROCESS</p>
+                <h2>From idea to <span>reality.</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-step reveal">
+
+                <span>01</span>
 
                 <div>
-                    <span>✓</span>
-                    <p>Business-focused solutions</p>
+                    <i class="fa-regular fa-comments"></i>
+                    <h3>Discover</h3>
+                    <p>
+                        We understand your business, goals and requirements.
+                    </p>
                 </div>
 
-                <div>
-                    <span>✓</span>
-                    <p>Modern and responsive interfaces</p>
-                </div>
+            </div>
+
+
+            <div class="process-step reveal">
+
+                <span>02</span>
 
                 <div>
-                    <span>✓</span>
-                    <p>Direct communication</p>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>Design</h3>
+                    <p>
+                        We create a clear visual direction and user experience.
+                    </p>
                 </div>
 
+            </div>
+
+
+            <div class="process-step reveal">
+
+                <span>03</span>
+
                 <div>
-                    <span>✓</span>
-                    <p>Long-term support available</p>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Build</h3>
+                    <p>
+                        We develop the solution using modern technologies.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="process-step reveal">
+
+                <span>04</span>
+
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Launch</h3>
+                    <p>
+                        We test, optimize and help bring your project online.
+                    </p>
                 </div>
 
             </div>
@@ -829,93 +876,45 @@
 </section>
 
 
-<!-- ================= TECHNOLOGY ================= -->
+<!-- =========================================================
+     CTA / CONTACT
+========================================================= -->
 
-<section class="tech-strip">
-
-    <div class="container">
-
-        <div class="tech-title">
-            <span>TECHNOLOGIES</span>
-        </div>
-
-        <div class="tech-list">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Angular</span>
-            <span>TypeScript</span>
-            <span>PHP</span>
-            <span>Java</span>
-            <span>Spring Boot</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="section contact-section" id="contact">
+<section class="section contact" id="contact">
 
     <div class="container">
 
-        <div class="contact-card">
+        <div class="contact-box reveal">
+
+            <div class="contact-glow"></div>
 
             <div class="contact-content">
 
-                <span class="section-label">05 — GET IN TOUCH</span>
+                <p class="eyebrow">START A PROJECT</p>
 
                 <h2>
-                    Have a project
-                    <span>in mind?</span>
+                    Have an idea?
+                    <span>Let's build it.</span>
                 </h2>
 
                 <p>
-                    Tell us a little about your business and what
-                    you're looking to build. Let's see how Hamidev
-                    can help.
+                    Tell us what you're working on and let's discuss
+                    how HamiDev can turn your idea into a digital product.
                 </p>
 
-                <div class="contact-buttons">
-
-                    <a
-                        href="mailto:hamideevv@gmail.com"
-                        class="btn btn-primary"
-                    >
-                        Email Hamidev
-                        <span>↗</span>
-                    </a>
-
-                    <a
-                        href="https://wa.me/212626941265"
-                        target="_blank"
-                        rel="noopener"
-                        class="btn btn-whatsapp"
-                    >
-                        WhatsApp
-                        <span>↗</span>
-                    </a>
-
-                </div>
+                <a href="mailto:hamideevv1@gmail.com"
+                   class="btn btn-primary contact-button">
+                    Get in Touch
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
             </div>
 
-
             <div class="contact-decoration">
-
-                <div class="contact-circle circle-one"></div>
-                <div class="contact-circle circle-two"></div>
-                <div class="contact-circle circle-three"></div>
-
-                <div class="contact-symbol">
-                    H
-                </div>
-
+                <div class="ring ring-one"></div>
+                <div class="ring ring-two"></div>
+                <div class="ring ring-three"></div>
+                <div class="center-dot"></div>
             </div>
 
         </div>
@@ -927,72 +926,82 @@
 </main>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
-<footer class="footer">
+<footer>
 
-    <div class="container">
+    <div class="container footer-container">
 
-        <div class="footer-top">
+        <div class="footer-brand">
 
             <a href="#home" class="logo">
-                <span class="logo-mark">H</span>
-                <span class="logo-text">Hami<span>dev</span></span>
+                <span class="logo-bracket">&lt;</span>
+                <span>Hami</span><strong>Dev</strong>
+                <span class="logo-bracket">/&gt;</span>
             </a>
 
             <p>
-                Building digital experiences for growing businesses.
+                Building digital experiences for modern businesses.
             </p>
-
-            <div class="footer-socials">
-
-                <a
-                    href="https://www.instagram.com/hamidev.ma/"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Instagram"
-                >
-                    IG
-                </a>
-
-                <a
-                    href="https://github.com/mohamedaymanhamidi"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="GitHub"
-                >
-                    GH
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="LinkedIn"
-                >
-                    IN
-                </a>
-
-            </div>
 
         </div>
 
 
-        <div class="footer-bottom">
+        <div class="footer-links">
 
-            <span>
-                © 2026 Hamidev. All rights reserved.
-            </span>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
 
-            <span>
-                Made with purpose.
-            </span>
+        </div>
+
+
+        <div class="footer-social">
+
+            <a href="https://github.com/mohamedaymanhamidi"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
 
         </div>
 
     </div>
 
+
+    <div class="container footer-bottom">
+
+        <span>
+            © <span id="year"></span> HamiDev. All rights reserved.
+        </span>
+
+        <span>
+            Designed &amp; developed by HamiDev
+        </span>
+
+    </div>
+
 </footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+========================================================= -->
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 
 <script src="script.js"></script>
